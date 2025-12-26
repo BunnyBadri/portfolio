@@ -1,50 +1,50 @@
+/* ===== ORANGE + WHITE THEME ===== */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
+  background: #ffffff;
+  color: #1f2933;
 }
 
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
   padding: 15px 40px;
-  background: #020617;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
+  background: #ffffff;
+  border-bottom: 2px solid #f97316;
 }
 
 .logo {
-  color: #38bdf8;
+  color: #f97316;
+  font-weight: bold;
 }
 
+/* Navigation Links */
+nav ul li a {
+  color: #1f2933;
+}
+
+nav ul li a:hover {
+  color: #f97316;
+}
+
+/* Hero Section */
 .hero {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(120deg, #fff7ed, #ffffff);
 }
 
 .btn {
   padding: 10px 20px;
-  background: #38bdf8;
-  color: black;
+  background: #f97316;
+  color: #ffffff;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #ea580c;
 }
 
 /* Pages */
@@ -53,12 +53,23 @@ nav ul li a {
 }
 
 /* Cards */
-.skill-card, .project-card {
-  background: #1e293b;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
+.skill-card, 
+.project-card {
+  background: #fff7ed;
+  border-left: 4px solid #f97316;
+  color: #1f2933;
 }
+
+/* Footer */
+footer {
+  background: #fff7ed;
+  color: #1f2933;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===== ANIMATIONS KEEP SAME ===== */
+
 
 /* Animations */
 .fade-in {
