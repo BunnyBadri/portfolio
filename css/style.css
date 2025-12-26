@@ -1,5 +1,4 @@
-/* ===== ORANGE + WHITE THEME ===== */
-
+/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,98 +6,77 @@ body {
   color: #1f2933;
 }
 
-/* Navbar */
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 40px;
   background: #ffffff;
-  border-bottom: 2px solid #f97316;
+  border-bottom: 3px solid #f97316;
 }
 
-.logo {
-  color: #f97316;
-  font-weight: bold;
+nav ul {
+  list-style: none;
+  display: flex;
 }
 
-/* Navigation Links */
+nav ul li {
+  margin-left: 20px;
+}
+
 nav ul li a {
+  text-decoration: none;
   color: #1f2933;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
   color: #f97316;
 }
 
-/* Hero Section */
+.logo {
+  color: #f97316;
+}
+
+/* HERO */
 .hero {
-  background: linear-gradient(120deg, #fff7ed, #ffffff);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff7ed;
 }
 
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* BUTTON */
 .btn {
-  padding: 10px 20px;
+  margin-top: 20px;
+  padding: 10px 25px;
   background: #f97316;
-  color: #ffffff;
-  border-radius: 6px;
+  color: white;
   text-decoration: none;
+  border-radius: 6px;
 }
 
-.btn:hover {
-  background: #ea580c;
-}
-
-/* Pages */
+/* PAGES */
 .page {
   padding: 60px;
 }
 
-/* Cards */
-.skill-card, 
-.project-card {
+/* CARDS */
+.card {
   background: #fff7ed;
-  border-left: 4px solid #f97316;
-  color: #1f2933;
-}
-
-/* Footer */
-footer {
-  background: #fff7ed;
-  color: #1f2933;
-  text-align: center;
-  padding: 15px;
-}
-
-/* ===== ANIMATIONS KEEP SAME ===== */
-
-
-/* Animations */
-.fade-in {
-  animation: fade 1s ease-in;
-}
-
-.slide-up {
-  animation: slide 1s ease-out;
-}
-
-.zoom {
-  animation: zoom 0.8s ease-in;
-}
-
-.delay { animation-delay: 0.4s; }
-.delay2 { animation-delay: 0.7s; }
-.delay3 { animation-delay: 1s; }
-
-@keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slide {
-  from { transform: translateY(40px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes zoom {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 5px solid #f97316;
+  border-radius: 6px;
 }
